@@ -1,0 +1,15 @@
+project: greeter
+component: api
+source:
+    type: git
+    url:
+build_script:
+    type: bash
+    location: /build/build.sh
+artifact:
+    type: jar
+    location: /build/libs
+    name: greeting-api.jar
+artifact_store:
+    type: azure-blob
+
